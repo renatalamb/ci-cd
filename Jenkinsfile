@@ -38,7 +38,7 @@ pipeline {
         // Isso resolve o conflito de porta com o Jenkins.
         sh 'docker stop minha-app || true'
         sh 'docker rm minha-app || true'
-        sh 'docker run -d --name minha-app -p 8081:8080 minha-app'
+        sh 'docker run -d --name minha-app -p 8082:8080 minha-app'
       }
     }
   }
