@@ -7,7 +7,6 @@ pipeline {
       etapas {
         // Busca o código do seu repositório no GitHub.
         git branch: 'main',
-            credentialsId: 'git_credentials',
             url: 'https://github.com/renatalamb/ci-cd'
       }
     }
